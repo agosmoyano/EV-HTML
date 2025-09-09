@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <img src="./assets/img/mrc.jpeg" alt="MRC" width="150px">
+        </div>
+    </header>
+    <main>
+        <form action="" method="post">
+            <h1><strong>Contacto con el Club</strong></h1>
+            <fieldset>
+                <legend><strong>Datos personales</strong></legend>
+
+                <label for="Nombre">Ingrese su nombre y su apellido</label>
+                <input type="text" name="Nombre" id="Nombre" required>
+
+                <label for="Email">Ingrese su email</label>
+                <input type="email" name="Email" id="Email" required>
+
+                <div>
+                    <label for="DNI">Ingrese su DNI</label>
+                    <input type="text" name="DNI" id="DNI" required>
+
+                    <label for="FechaN">Ingrese su fecha de nacimiento</label>
+                    <input type="date" name="FechaN" id="FechaN">
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend><strong>Preferencias del Club</strong></legend>
+
+                <div><label for="socio">¿Es socio del club? Si</label>
+                    <input type="radio" name="socio" id="socio" value="Si">
+                    <label for="socio">No</label>
+                    <input type="radio" name="socio" id="socio" value="No">
+                </div>
+                <div>
+                    <select name="deportes">
+                        <option value="6">¿Deporte de elección?</option>
+                        <option value="1">Voley</option>
+                        <option value="2">Basquet</option>
+                        <option value="3">Natacion</option>
+                        <option value="4">Pelota paleta</option>
+                        <option value="5">Patin</option>
+                    </select>
+                </div>
+                <select name="familia">
+                    <option value="5"> Cantidad de miembros de su grupo familiar</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend><strong>Comentarios</strong></legend>
+
+                <label for="Comentarios">Ingrese comentarios o sugerencias para el club</label>
+                <div>
+                    <textarea name="comentarios" id="comentarios" cols="40" rows="10"></textarea>
+                </div>
+            </fieldset>
+            <label for="enviar"></label>
+            <input type="submit" name="enviar" id="enviar">
+
+        </form>
+    </main>
+    <footer>
+        <div>
+            <a href="https://www.instagram.com/marabuntarc/?hl=es"><img src="./assets/img/instagram.png" alt="instagram" width="50px"></a>
+        </div>
+
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
